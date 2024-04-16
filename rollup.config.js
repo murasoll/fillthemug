@@ -16,6 +16,7 @@ export default [
         file: packageJson.main,
         format: "cjs",
         sourcemap: true,
+        exports: 'named'
       },
       {
         file: packageJson.module,
@@ -35,7 +36,7 @@ export default [
   },
   {
     input: "src/index.ts",
-    output: [{ file: "dist/types.d.ts", format: "es" }],
+    output: [{ file: "dist/index.d.ts", format: "es" }],
     plugins: [dts.default()],
     external: [/\.css$/],
   },

@@ -1,12 +1,12 @@
 import { StoryFn, Meta } from "@storybook/react";
-import SmartRating from "./Rating";
+import { Rating } from "../../index.js";
 
 export default {
   title: "ReactComponentLibrary/Rating",
-  component: SmartRating,
-} as Meta<typeof SmartRating>;
+  component: Rating,
+} as Meta<typeof Rating>;
 
-const Template: StoryFn<typeof SmartRating> = (args) => <SmartRating {...args} />;
+const Template: StoryFn<typeof Rating> = (args) => <Rating {...args} />;
 
 export const RatingTest = Template.bind({});
 RatingTest.args = {
