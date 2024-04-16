@@ -1,7 +1,10 @@
 {
   "name": "fillthemug",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "react component ui",
+  "files": [
+    "dist/"
+  ],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +25,7 @@
     "library",
     "components"
   ],
-  "author": "@murasoll",
+  "author": "@murasoll - joepexel",
   "license": "ISC",
   "peerDependencies": {
     "react": "^18.2.0",
