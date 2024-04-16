@@ -1,6 +1,6 @@
 {
   "name": "fillthemug",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "react component ui",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -11,6 +11,17 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/murasoll/fillthemug.git"
+  },
+  "keywords": [
+    "mug",
+    "react",
+    "ui",
+    "library",
+    "components"
+  ],
   "author": "@murasoll",
   "license": "ISC",
   "peerDependencies": {
