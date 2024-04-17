@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Rating.css";
 import { RatingProps } from "./Rating.types";
 
-const Rating: React.FC<RatingProps> = (props) => {
+export const Rating: React.FC<RatingProps> = (props) => {
   const stars = Array.from({ length: 5 }, (_, i) => i + 1);
   const [rating, setRating] = useState(0);
   return (
@@ -25,5 +25,3 @@ const Rating: React.FC<RatingProps> = (props) => {
     </div>
   );
 };
-
-export default Rating;
