@@ -1,12 +1,12 @@
 import React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import SmartRating from "./Rating";
+import { Rating } from "./Rating";
 import { expect } from "@storybook/test";
 
-describe("SmartRating", () => {
+describe("Rating", () => {
   test("renders the Rating component", () => {
-    render(<SmartRating title="default" theme="primary" testIdPrefix="rating" />);
+    render(<Rating title="default" theme="primary" testIdPrefix="rating" />);
 
     expect(screen.getByRole("heading").innerHTML).toEqual("default");
     expect(screen.getAllByRole("button", { hidden: true }).length).toEqual(5);
@@ -14,7 +14,7 @@ describe("SmartRating", () => {
 
   test("click the 5 star rating", async () => {
     const stars = [0, 1, 2, 3, 4];
-    render(<SmartRating title="default" theme="primary" testIdPrefix="rating" />);
+    render(<Rating title="default" theme="primary" testIdPrefix="rating" />);
 
     stars.forEach(async (star) => {
       const element = screen.getByTestId("rating-" + star);
