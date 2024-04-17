@@ -4,3 +4,4 @@ babel.*
 jest.*
 rollup.*
 .storybook/
+CHANGELOG.md
