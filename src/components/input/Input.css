@@ -1,0 +1,24 @@
+.box {
+    background-color: #e2e2e2;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+input  {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.radius-xs {
+    border-radius: 2px;
+}
+.radius-sm {
+    border-radius: 5px;
+}
+.radius-lg {
+    border-radius: 10px;
+}
+.radius-xl {
+    border-radius: 15px;
+}
