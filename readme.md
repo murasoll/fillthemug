@@ -1,4 +1,4 @@
-## My Component Library
+## Fill The Mug
 Welcome to My Component Library! This is a collection of reusable React components that aim to simplify the development process and provide a consistent user experience across different applications.
 
 ## Getting Started
