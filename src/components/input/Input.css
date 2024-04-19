@@ -1,24 +1,39 @@
 .box {
     background-color: #e2e2e2;
-    padding: 5px 10px;
     width: fit-content;
+    height: fit-content;
+
+    --input-height-xs: 30px;
+    --input-height-sm: 36px;
+    --input-height-md: 42px;
+    --input-height-lg: 50px;
+    --input-height-xl: 60px;
+
+    --input-font-size-xs: 0.8rem;
+    --input-font-size-sm: 1rem;
+    --input-font-size-md: 1.2rem;
+    --input-font-size-lg: 1.5rem;
+    --input-font-size-xl: 1.7rem;
+
+    --input-radius-xs: 0.25rem; 
+    --input-radius-sm: 0.5rem; 
+    --input-radius-md: 1rem; 
+    --input-radius-lg: 1.5rem; 
+    --input-radius-xl: 2rem; 
+
+    --input-font-size: var(--input-font-size-xs);
+    --input-height: var(--input-height-xs);
+
+    --input-radius: var(--input-radius-xs);
+    border-radius: var(--input-radius);
 }
 
 input  {
     background-color: transparent;
     border: none;
     outline: none;
+    height: var(--input-height);
+    font-size: var(--input-font-size);
+    padding: 5px 15px;
 }
 
-.radius-xs {
-    border-radius: 2px;
-}
-.radius-sm {
-    border-radius: 5px;
-}
-.radius-lg {
-    border-radius: 10px;
-}
-.radius-xl {
-    border-radius: 15px;
-}

@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
-type InputSize = "xs" | "sm" | "lg" | "xl";
+type InputSize = "xs" | "sm" | "md" | "lg" | "xl";
 type InputType = "text" | "number";
-type InputRadius = "xs" | "sm" | "lg" | "xl";
+type InputRadius = "xs" | "sm" | "md" | "lg" | "xl";
 type InputStyle = "default" | "outline" | "filled";
 
 export interface InputProps {
@@ -15,6 +15,3 @@ export interface InputProps {
     size?: InputSize;
 }
 
-const defaultInputProps: Partial<InputProps> = {
-    style: "default",
-};
